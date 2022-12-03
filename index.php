@@ -85,6 +85,7 @@ $ciudades = mysqli_query($con, $query) or die(mysqli_error($con));
                                 <th scope="col">Sexo</th>
                                 <th scope="col">Ciudad</th>
                                 <th scope="col">Fecha_nacimiento</th>
+                                <th colspan="2">opciones</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -34,6 +34,7 @@ $ciudades = mysqli_query($con, $query) or die(mysqli_error($con));
                 <h3>Ingrese los datos actualizados...</h3>
                 <div class="">
                     <form action="guardar.php" method="post">
+                        <input type="hidden" name="id" value="<?php echo $personas['id']; ?>">
                         <div class="mb-3 col-md-4">
                             <label for="primer_nombre" class="form-label">Primer nombre</label>
                             <input type="text" class="form-control" id="primer_nombre" name="primer_nombre" placeholder="Primer nombre" value="<?php echo $personas['primer_nombre']; ?>"  required>
